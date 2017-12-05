@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+		
+		<script>
+			function hideModal(){
+				$("#pwModal").modal("hide");
+			};
+			
+		</script>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<div class="row">
+				<img src="images/logo.png" width="250px">
+				</div>
+			</div>
+			
+			<div class="container-fluid b">
+			
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the Forgot Password Page of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li><b style="color:#059067;">ANSWER fields</b> - you will type here your answers to the secret questions which came from your submitted on-line resume.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 50%;">
+				
+					
+				<form action="index.html">
+					<div class="row">
+						<table width="100%">
+							<tr>
+								<td width="30%" class="i">Secret question #1</td>
+								<td class="j">Insert secret question here</td>
+							</tr>
+							<tr>
+								<td width="30%" class="i">Answer</td>
+								<td><input type="text" style="margin-left:5px;"></td>
+							</tr>
+							<tr>
+								<td width="30%" class="i">Secret question #2</td>
+								<td class="j">Insert secret question here</td>
+							</tr>
+							<tr>
+								<td width="30%" class="i">Answer</td>
+								<td><input type="text" style="margin-left:5px;"></td>
+							</tr>
+							<tr>
+								<td width="30%" class="i">Secret question #2</td>
+								<td class="j">Insert secret question here</td>
+							</tr>
+							<tr>
+								<td width="30%" class="i">Answer</td>
+								<td><input type="text" style="margin-left:5px;"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="row">
+						<br/>
+							<div class="col-lg-3"></div>
+							<div class="col-lg-3"></div>
+							<div class="col-lg-6">							
+							<p align="right"><a href="" data-toggle="modal" data-target="#pwModal"><input class="button2" type="submit" value="SUBMIT"/></a></p>
+							</div>		
+				</form>			
+							<div class="modal fade" id="pwModal" role="dialog">
+					
+								<div class="modal-dialog">
+
+								  <!-- Modal content-->
+									<div class="modal-content">
+								  
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+												<center style="padding-top:40px;"><font class="u" style="line-height:1">THANK YOU FOR ANSWERING THE SECRET QUESTIONS CORRECTLY. Please enter your new password:</font>
+											</div>
+											
+											<div class="modal-body" style="padding:40px;">
+													<form action="applicantinfo.html">
+														<div class="row">
+															<table width="100%">
+																<tr>
+																	<td width="30%" class="e">Password</td>
+																	<td><input type="password" style="margin-top:-10px;"></td>
+																</tr>
+																<tr>
+																	<td width="30%" class="e">Confirm Password</td>
+																	<td><input type="password" style="margin-top:-10px;"></td>
+																</tr>
+															</table>
+														</div>
+														<div class="row">
+															<br/>
+																<div class="col-lg-4"></div>
+																<div class="col-lg-8">
+																
+																<p align="right"><a href="" data-toggle="modal" id="myBtn" data-target="#tyModal"><input type="submit" value="SUBMIT" onclick="hideModal()" class="button2"></a></p>
+																</div>					
+														</div>
+													</form>
+
+											</div>
+											
+							
+											
+											<div class="modal-footer">
+											  
+											</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal fade" id="tyModal" role="dialog">
+					
+								<div class="modal-dialog">
+
+								  <!-- Modal content-->
+									<div class="modal-content">
+								  
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+												<center style="margin-top:40px;"><font class="u">You have successfully changed your password.</font>
+												<br/><br/>
+													<p align="center"><button class="button2"><a href="index.jsp"><font style="color:white">Back to Home</font></a></button></p>
+												<br/><br/>
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</form>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

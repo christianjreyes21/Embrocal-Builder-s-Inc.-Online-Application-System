@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+			
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr>
+							<td width="90%"></td>
+							<td><div class="g"><a href="index.html"><img src="glyphicons/glyphicons-log-out.png" width="20px" style="margin-top:-5px">&nbsp;Log out</a></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to your Personal Account - Settings!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li>On this page, you can see three different buttons: <b>CHANGE PASSWORD, CHANGE USERNAME, and DEACTIVATE ACCOUNT.</b>
+											<li><b>CHANGE PASSWORD button</b> - If you click this, you can change your old password to a new one of your choice. It must be at least 8 characters with 1 number on it.
+											<li><b>CHANGE USERNAME button</b> - If you click this, you can change your old username to a new one of your choice. It must be at least 6 characters with 1 number on it.
+											<li><b>DEACTIVATE ACCOUNT</b> - If you click this, there will be a question saying "Are you sure you want to deactivate account." If you choose <b>BACK TO HOME</b>, it means you don't like to remove your account but when you choose <b>CONFIRM</b> then it will ask you to write your password and direct you to the main homepage which means you successfully deactivated your account and it can't be accessed anymore.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 80%;" cellspacing="100px">
+				
+				<table align="center">
+					<tr>
+						<td class="p"><div><a href="applicantsettings.html" style="color:white"><img src="glyphicons/glyphicons-pencil.png" width="20px" style="margin-top:-5px">&nbsp;Change password</div></a></td>
+						<td></td>
+						<td></td>
+						<td class="p" style="border-bottom: 10px solid #007cb1;"><div><a href="applicantsettingschangeun.html" style="color:white"><img src="glyphicons/glyphicons-pencil.png" width="20px" style="margin-top:-5px">&nbsp;Change username</div></a></td>
+						<td></td>
+						<td></td>
+						<td class="p"><div><a href="applicantsettingsdeact.html" style="color:white"><img src="glyphicons/glyphicons-delete.png" width="20px" style="margin-top:-5px">&nbsp;Deactivate account</div></a></td>
+					</tr>
+					
+				</table>
+				
+				<br/>
+				<br/>
+				<br/>
+				
+				<form action="">
+					<div class="row">
+						<table align="center" width="50%">
+							<tr>
+								<td width="40%" class="e"><font class="q">Old username</font></td>
+								<td><input type="password" style="margin-top:-10px;"></td>
+							</tr>
+							<tr>
+								<td class="e"><font class="q">New username</font></td>
+								<td><input type="password" style="margin-top:-10px;"></td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<div class="row">
+						<br/>
+							<div class="col-lg-6"></div>
+							<div class="col-lg-5">
+							
+							<br/>
+							<br/>
+							
+							<p align="right"><a href="profile.html"><div class="button2"><font color="white"><img src="glyphicons/glyphicons-home.png" width="20px" style="margin-top:-7px;"> Back to home</div></a> 
+							<a data-toggle="modal" href="#doneModal"><input type="submit" value="SUBMIT" class="button2"></a></p>
+							</div>
+							
+							<div class="modal fade" id="doneModal" role="dialog">
+					
+								<div class="modal-dialog">
+
+								  <!-- Modal content-->
+									<div class="modal-content">
+								  
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+												<center style="margin-top:40px;"><font class="u">You have successfully changed your username.</font>
+												<br/><br/>
+											</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</form>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

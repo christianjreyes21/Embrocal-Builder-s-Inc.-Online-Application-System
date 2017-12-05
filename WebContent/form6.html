@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="js/main.bootbox.js" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+		
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr>
+							<td><div class="h"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Personal info</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-education.png" width="25px" style="margin-top:-5px"> &nbsp;Educational Background</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-suitcase.png" width="20px" style="margin-top:-5px"> &nbsp;Employment Record</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-group.png" width="25px" style="margin-top:-5px"> &nbsp;Character References</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-paperclip.png" width="20px" style="margin-top:-5px"> &nbsp;Others</div></td>
+							<td><div class="g"><img src="glyphicons/glyphicons-lock.png" width="15px" style="margin-top:-5px"> &nbsp;Username & Password</div></td>
+							
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the On-line Resume of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li><b>VIEW COMPLETE DETAILS button</b> - if you click this, it will show you the outline of your complete resume with your picture to be submitted.
+											<li><b>SUBMIT button</b> - If you click this, it will direct you to the Log-In page.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 65%;">
+				<p align="center">
+					<font class="w">PLEASE TYPE YOUR DESIRED USERNAME AND PASSWORD</font>
+					<br/>
+				</p>
+				<br/>
+			
+				
+				<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-6">
+						<form id="form6" method="post" class="form-horizontal">
+							<input type="hidden" name="form" value="6"/>
+							<div class="form-group">
+							<label class="col-lg-3 e" style="font-weight:normal;">Username</label>
+								<div class="col-lg-9">
+									<input type="text" class="form-control" name="Username"/>
+								</div>
+							</div>
+
+							<div class="form-group">
+							<label class="col-lg-3 e" style="font-weight:normal;">Password</label>
+								<div class="col-lg-9">
+									<input type="password" class="form-control" name="Password"/>
+								</div>
+							</div>
+
+							 <div class="col-lg-9 col-lg-offset-7">
+								<a href="index.html"><button type="button" class="btn btn-primary">CANCEL</button></a> &nbsp; <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
+							</div>
+
+						</form>
+					</div>
+					<div class="col-lg-3"></div>
+					
+					<script>
+					$(document).ready(function() {
+						$('#form6').formValidation({
+							framework: 'bootstrap',
+							icon: {
+								valid: 'glyphicon glyphicon-ok',
+								invalid: 'glyphicon glyphicon-remove',
+								validating: 'glyphicon glyphicon-refresh'
+							},
+							fields: {
+								username: {
+									validators: {
+										notEmpty: {
+											message: 'The username is required'
+										},
+										stringLength: {
+											min: 8,
+											max: 30,
+											message: 'The username must be at least 8 characters'
+										}
+									}
+								},
+								password: {
+									validators: {
+										notEmpty: {
+											message: 'The password is required'
+										},
+										stringLength: {
+											min: 6,
+											max: 30,
+											message: 'The username must be at least 6 characters'
+										}
+									}
+								}
+							}
+						});
+					});
+					</script>
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

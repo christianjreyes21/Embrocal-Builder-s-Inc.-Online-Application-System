@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="js/main.bootbox.js" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+			
+		
+					
+					
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr>
+							<td><div class="h"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Personal info</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-education.png" width="25px" style="margin-top:-5px"> &nbsp;Educational Background</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-suitcase.png" width="20px" style="margin-top:-5px"> &nbsp;Employment Record</div></td>
+							<td><div class="g"><img src="glyphicons/glyphicons-group.png" width="25px" style="margin-top:-5px"> &nbsp;Character References</div></td>
+							<td></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-paperclip.png" width="20px" style="margin-top:-5px"> &nbsp;Others</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-lock.png" width="15px" style="margin-top:-5px"> &nbsp;Username & Password</div></td>
+
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the On-line Resume of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li><b>NAME section</b> - the name of your chosen character reference
+											<li><b>OCCUPATION section</b> - the occupation of your chosen character reference
+											<li><b>CONTACT section</b> - the contact no. of your chosen character reference
+											<li><b>NEXT button</b> - If you click this, it will direct you to the next part of the On-line Resume which is the Character References.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 75%;">
+			
+				<div class="row">
+					<div class="col-lg-12">
+						<form id="form4" action="apply.html" method="post" class="form-horizontal">
+							<input type="hidden" name="form" value="4"/>
+							<div class="form-group">
+								<label class="col-lg-4 e" style="text-align:center;font-weight:normal;">NAME</label>
+								<label class="col-lg-4 e" style="text-align:center;font-weight:normal;">OCCUPATION</label>
+								<label class="col-lg-4 e" style="text-align:center;font-weight:normal;">CONTACT</label>
+								
+							</div>
+							
+							<div class="form-group">
+								<div class="col-lg-4">
+										<input type="text" class="form-control" name="RefName"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control" name="RefOccupation"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control" name="RefContact"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+								<div class="col-lg-4">
+										<input type="text" class="form-control"/>
+								</div>
+							</div>
+							
+							<br/>
+					
+							<div class="col-lg-12 col-lg-offset-10">
+								<a href="index.html"><button type="button" class="btn btn-primary">CANCEL</button></a> &nbsp; <button type="submit" class="btn btn-primary" name="next" value="next">NEXT</button>
+							</div>
+
+						</form>
+						
+						<script>
+							$(document).ready(function() {
+								$('#form4').formValidation({
+									framework: 'bootstrap',
+									icon: {
+										valid: 'glyphicon glyphicon-ok',
+										invalid: 'glyphicon glyphicon-remove',
+										validating: 'glyphicon glyphicon-refresh'
+									},
+									fields: {
+										RefName: {
+											validators: {
+												notEmpty: {
+													message: 'Name is required'
+												}
+											}
+										},
+										RefOccupation: {
+											validators: {
+												notEmpty: {
+													message: 'Address is required'
+												}
+											}
+										},
+										RefContact: {
+											validators: {
+												notEmpty: {
+													message: 'Contact is required'
+												}
+											}
+										}
+									}
+								});
+							});
+						</script>
+					</div>
+					<div class="col-lg-2"></div>
+				</div>
+				
+				
+				
+			</div>
+
+			<br/>
+			<br/>
+			<br/>
+			
+			
+				</form>
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

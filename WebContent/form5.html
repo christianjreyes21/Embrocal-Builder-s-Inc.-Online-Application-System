@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+		
+
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+			
+			.ui-datepicker th {
+				text-transform: normal;
+				font-size: 20px;
+				padding: 5px 0;
+				font-family: 'trebuchet ms';
+				font-weight: normal;
+				color:white;
+			}
+			
+			.ui-datepicker-prev {
+				display: inline-block;
+				background-size: 20px;
+				text-align: center;
+				cursor: pointer;
+				background-image: url('images/leftarrow.png');
+				background-repeat: no-repeat;
+				background-position:center;
+				line-height: 600%;
+				overflow: hidden;
+				margin-top:3px;
+			}
+			
+			.ui-datepicker-header {
+				border: 0px;
+				width:102%;
+				margin-left:-1%;
+				margin-top:-1%;
+				background-color: #f0f0f0;
+				font-weight: normal;
+				font-family: Bebas Neue Regular;
+				font-size: 30px;
+			}
+			
+			.ui-datepicker-next {
+				display: inline-block;
+				background-position:center;
+				background-size: 20px;
+				text-align: center;
+				cursor: pointer;
+				background-image: url('images/rightarrow.png');
+				background-repeat: no-repeat;
+				line-height: 600%;
+				overflow: hidden;
+				margin-top:3px;
+			}
+			
+			.ui-datepicker tbody td {
+				padding: 0;
+				border-right: 1px solid #bbb;
+				color:white;
+			}
+			
+			.ui-datepicker tbody td:last-child {
+				color:white;
+			}
+
+			.ui-datepicker tbody tr {
+				color:white;
+			}
+			.ui-datepicker tbody tr:last-child {
+				color:white;
+			}
+
+
+			.ui-datepicker-next:hover{
+				display: inline-block;
+				background-position:center;
+				background-size: 20px;
+				text-align: center;
+				cursor: pointer;
+				background-image: url('images/rightarrow.png');
+				background-repeat: no-repeat;
+				line-height: 600%;
+				overflow: hidden;
+				border: 2px;
+				background-color:none;
+			}
+			
+			.ui-datepicker-prev:hover{
+				display: inline-block;
+				background-position:center;
+				background-size: 20px;
+				text-align: center;
+				cursor: pointer;
+				background-image: url('images/leftarrow.png');
+				background-repeat: no-repeat;
+				line-height: 600%;
+				overflow: hidden;
+				border: 2px;
+				background-color:none;
+			}
+			.ui-datepicker {
+				border: 0px;
+				width: 400px;
+				background-color:#026995;
+			}
+			
+			.ui-datepicker tbody td {
+				text-align:center;
+				border:none;
+				padding: 5px;
+			}
+
+			.ui-datepicker td span, .ui-datepicker td a {
+				display: inline-block;
+				font-weight: bold;
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				color: white;
+			}
+			
+			.ui-datepicker-calendar .ui-state-default {
+				background-color: transparent;
+				color: white;
+				font-family: 'trebuchet ms';
+				border:none;
+			}
+			
+			.ui-datepicker-unselectable .ui-state-default {
+				color: #f0f0f0;
+			}
+
+			.ui-datepicker-calendar .ui-state-hover {
+				background-color: #007cb1;
+			}
+
+			.ui-datepicker-calendar .ui-state-active {
+				background-color: #007cb1;
+				color: #e0e0e0;
+			}
+		</style>
+			
+		<script>
+		function radioFunc(val) {
+			if(val == "Yes") {
+				document.getElementById("z").style.visibility="visible";
+				document.getElementById("x").style.visibility="visible";
+				document.getElementById("w").style.visibility="visible";
+				document.getElementById("u").style.visibility="visible";
+				return false;
+			} else {
+				document.getElementById("z").style.visibility="hidden";
+				document.getElementById("x").style.visibility="hidden";
+				document.getElementById("w").style.visibility="hidden";
+				document.getElementById("u").style.visibility="hidden";
+			}
+		}
+		</script>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr>
+							<td><div class="h"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Personal info</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-education.png" width="25px" style="margin-top:-5px"> &nbsp;Educational Background</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-suitcase.png" width="20px" style="margin-top:-5px"> &nbsp;Employment Record</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-group.png" width="25px" style="margin-top:-5px"> &nbsp;Character References</div></td>
+							<td><div class="g"><img src="glyphicons/glyphicons-paperclip.png" width="20px" style="margin-top:-5px"> &nbsp;Others</div></td>
+							<td></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-lock.png" width="15px" style="margin-top:-5px"> &nbsp;Username & Password</div></td>
+						
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the On-line Resume of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li>You can just type <b>NONE</b> if the field to be answered is really not applicable to you like for example, the <b>WHO REFERRED YOU TO THE COMPANY, TIN</b> fields etc.
+											<li><b>NEXT button</b> - If you click this, it will direct you to the next part of the On-line Resume which is the Username and Password.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d">
+			
+							
+				<div class="row">
+					<div class="col-lg-11">
+						<form id="form5" action="apply.html" method="post" class="form-horizontal">
+							<input type="hidden" name="form" value="5"/>
+						
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">S.S.S. Number</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" name="SSSNumber"/>
+								</div>
+								<label class="col-lg-3 e" style="font-weight:normal;">Latest Res. Cert.</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" name="LatestResCert"/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Tin</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" name="TIN"/>
+								</div>
+								<label class="col-lg-3 e" style="font-weight:normal;">Date Issued</label>
+								<div class="col-lg-3">
+									<input type="date" placeholder="mm/dd/yyyy" name="DateIssued">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Pag-ibig No.</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" name="PagIbigNumber"/>
+								</div>
+								<label class="col-lg-3 e" style="font-weight:normal;">Place Issued</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" name="PlaceIssued"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-6 e" style="font-weight:normal;">Who referred you to the company?</label>
+								<div class="col-lg-6">
+									<input type="text" class="form-control" name="Q1"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-6 e" style="font-weight:normal;">Do you have any relatives working in the company?</label>
+								<div class="col-lg-6">
+									<input type="radio" value="Yes" name="ans" onclick="radioFunc(this.value)"> <font class="f"> Yes</font>
+									&nbsp;&nbsp;&nbsp;
+									<input type="radio" value="No" name="ans" id="y" onclick="radioFunc(this.value)"> <font class="f"> No</font>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-5 e" id="z" style="font-weight:normal;">Name of relative</label>
+								<div class="col-lg-7">
+									<input type="text" id="x" name="RelName">
+								</div>
+							</div>
+							
+							<div class="form-group" id="x">
+								<label class="col-lg-5 e" id="w" style="font-weight:normal;">Position of relative</label>
+								<div class="col-lg-7">
+									<input type="text" id="u" name="RelPosition">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-5 e" style="font-weight:normal;">Position desired</label>
+								<div class="col-lg-5">
+									<select name="Position">
+										<option selected=""></option>
+										<option value="Accountant">Accountant</option>
+										<option value="Admin Assistant">Admin Assistant</option>
+										<option value="Apprentice">Apprentice</option>
+										<option value="Architect">Architect</option>
+										<option value="Backhoe Operator">Backhoe Operator</option>
+										<option value="Building Inspector / Consultant">Building Inspector / Consultant</option>
+										<option value="Carpenter">Carpenter</option>
+										<option value="Civil Engineer">Civil Engineer</option>
+										<option value="Construction Engineer">Construction Engineer</option>
+										<option value="Construction Foreman">Construction Foreman</option>
+										<option value="Construction Manager">Construction Manager</option>
+										<option value="Construction Worker">Construction Worker</option>
+										<option value="Driver">Driver</option>
+										<option value="Dry wall Installer">Dry wall Installer</option>
+										<option value="Electrician">Electrician</option>
+										<option value="Equipment">Equipment Operator</option>
+										<option value="Estimator">Estimator</option>
+										<option value="Field Engineer">Field Engineer</option>
+										<option value="Framing Carpenter">Framing Carpenter</option>
+										<option value="General Laborer">General Laborer</option>
+										<option value="Laborer">Laborer</option>
+										<option value="Mason">Mason</option>
+										<option value="Messenger">Messenger</option>
+										<option value="Mobile Crane Operator">Mobile Crane Operator</option>
+										<option value="Nurse">Nurse</option>
+										<option value="Painter">Painter</option>
+										<option value="Pipe Fitter">Pipe Fitter</option>
+										<option value="Plumber">Plumber</option>
+										<option value="Project Manager">Project Manager</option>
+										<option value="Purchasing Coordinator">Purchasing Coordinator</option>
+										<option value="Purchasing Manager">Purchasing Manager</option>
+										<option value="Rigger">Rigger</option>
+										<option value="Safety Officer">Safety Officer</option>
+										<option value="Steelman">Steelman</option>
+										<option value="Surveyor">Surveyor</option>
+										<option value="Timekeeper">Timekeeper</option>
+										<option value="Tower Crane Operator">Tower Crane Operator</option>
+										<option value="Warehouseman">Warehouseman</option>
+										<option value="Welder">Welder</option>
+									</select>
+								</div>
+							</div>
+							
+							<br/>
+							<br/>
+							
+							 <div class="col-lg-12 col-lg-offset-10">
+								<a href="index.html"><button type="button" class="btn btn-primary">CANCEL</button></a> &nbsp; <button type="submit" class="btn btn-primary" name="next" value="next">NEXT</button>
+							</div>
+					
+						</form>
+					</div>
+					<div class="col-lg-2"></div>
+				
+					<script>
+					$(document).ready(function() {
+						$('#form5').formValidation({
+							
+							fields: {
+								SSSNumber: {
+									validators: {
+										notEmpty: {
+											message: 'SSS Number is required'
+										},
+										regexp: {
+											regexp: /^\d{3}-\d{2}-\d{4}$/i,
+											message: 'Invalid SSS Number. Format: XXX-XX-XXXX'
+										}
+									}
+								},
+								LatestResCert: {
+									validators: {
+										notEmpty: {
+											message: 'Latest Res. Cert. is required'
+										},
+										regexp: {
+											regexp: /^\d{3}-\d{3}-\d{3}$/i,
+											message: 'Invalid SSS Number. Format: XXX-XXX-XXX'
+										}
+									}
+								},
+								TIN: {
+									validators: {
+										notEmpty: {
+											message: 'TIN is required'
+										},
+										regexp: {
+											regexp: /^\d{3}-\d{3}-\d{3}-\d{3}$/i,
+											message: 'Invalid TIN. Format: XXX-XXX-XXX-XXX'
+										}
+									}
+								},
+								DateIssued: {
+									validators: {
+										notEmpty: {
+											message: 'Date Issued is required'
+										}
+									}
+								},
+								PagIbigNumber: {
+									validators: {
+										notEmpty: {
+											message: 'Pag-ibig number is required'
+										},
+										regexp: {
+											regexp: /^\d{4}-\d{4}-\d{4}$/i,
+											message: 'Invalid Pag-ibig number. Format: XXXX-XXXX-XXXX'
+										}
+									}
+								},
+								PlaceIssued: {
+									validators: {
+										notEmpty: {
+											message: 'Date Issued is required'
+										}
+									}
+								},
+								Position: {
+									validators: {
+										notEmpty: {
+											message: 'Position Required'
+										}
+									}
+								},
+								Q1: {
+									validators: {
+										notEmpty: {
+											message: 'This filed is not required but if no one referred you, type none'
+										}
+									}
+								}
+							}
+						});
+					});
+					</script>
+				</div>
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

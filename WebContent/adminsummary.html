@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+			
+			tr:nth-child(even) {
+				background: #f0f0f0;
+			}
+			tr:nth-child(odd) {
+				background: #FFF;
+			}
+		</style>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr style="background-color: #007cb1;">
+							<td><a href="adminprofile.html"><div class="h"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Admin info</div></a></td>
+							<td><a href="adminapplicantsinfo.html"><div class="h"><img src="glyphicons/glyphicons-paperstack.png" width="20px" style="margin-top:-5px"> &nbsp;Applicants Information</div></a></td>
+							<td><a href="admininterviewsched.html"><div class="h"><img src="glyphicons/glyphicons-calendar.png" width="20px" style="margin-top:-5px"> &nbsp;Interview Scheduling</div></a></td>
+							<td><a href="adminstatusupdate.html"><div class="h"><img src="glyphicons/glyphicons-circle-info.png" width="20px" style="margin-top:-5px"> &nbsp;Status Update</div></a></td>
+							<td><a href="adminsummary.html"><div class="g"><img src="glyphicons/glyphicons-notes.png" width="20px" style="margin-top:-5px"> &nbsp;Summary</div></a></td>
+							<td></td>
+							
+							<td width="20%"></td>
+							
+							<td><a href="adminsettings.html"><div class="h"><img src="glyphicons/glyphicons-cogwheel2.png" width="20px" style="margin-top:-5px">&nbsp;Settings</div></a></td>
+							<td><a href="index.html"><div class="g"><img src="glyphicons/glyphicons-log-out.png" width="20px" style="margin-top:-5px">&nbsp;Log out</div></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to your Administrator Account - Summary!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li>On this page, you can see the summary of the applicants' sorted status and position in the company.
+											<li>Also, you can see here the other tabs to be viewed later on.
+											<li><b>SEARCH bar with GO button </b>- If you click this, it will let you search the names of the applicants.
+											<li><b>SORT BY</b> fields with <b>GO</b> button:
+											<li><b>POSITION dropdown button </b>- If you click this, you will choose a certain position to be seen and sorted.
+											<li><b>STATUS dropdown button </b>- If you click this, you will choose a certain status to be seen and sorted.
+											<li>This produces a table of names, position and status depending on the sorted categories.
+											<li>On default, all applicants are sorted according to their surnames.
+
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 85%;">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+						
+						<table style="float:left">
+							<tr>
+								<th></th>
+								<th><p align="left" style="padding:0px; margin:0px;"><font face="trebuchet ms" color="#007cb1" size="4px"> &nbsp; Position</p></th>
+								<th></th>
+								<th><p align="left" style="padding:0px; margin:0px;"><font face="trebuchet ms" color="#007cb1" size="4px"> &nbsp; Status</p></th>
+								<th></th>
+							</tr>
+							<tr style="background-color:white">
+								<form action="">
+								<td class="i">sort by</td>
+								<td style="width:200px">
+									<select>
+										<option>Programmer</option>
+										<option>Engineer</option>
+										<option>Carpenter</option>
+									</select>
+								</td>
+								<td><input type="submit" value="go" style="padding:3px 5px 3px 5px; border-radius:0px;"></td>
+								</form>
+								<form action="">
+								<td style="width:200px">
+									<select>
+										<option>Hired</option>
+										<option>Not hired</option>
+										<option>For further evaluation</option>
+									</select>
+								</td>
+								<td><input type="submit" value="go" style="padding:3px 5px 3px 5px; border-radius:0px;"></td>
+								</form>
+							</tr>
+						</table>
+						
+						<table style="float:right">
+							<br/><br/>
+							<tr>
+								<form action="">
+								<td>
+									<input type="text" style="font-size:20px;" value="Search" onblur="if (this.value == '') {this.value = 'Search';}" onfocus="if (this.value == 'Search') {this.value = '';}">
+								</td>
+								<td><a href=""><div class="button2" style="border-radius:0px"><img src="glyphicons/glyphicons-search.png" width="20px"></div></a></td>
+								</form>
+							</tr>
+						</table>
+						</div>
+						
+						<br/>
+						<hr>
+						<br/>
+						
+						<div class="row">
+						<table align="center" width="80%">
+							<tr>
+								<th></th>
+								<th class="o">Name</th>
+								<th class="o">Status</th>
+								<th class="o">Position</th>
+							</tr>
+							<tr>
+								<td class="n">1</td>
+								<td class="k">Bautista, Daniela</td>
+								<td class="k">Hired</td>
+								<td class="k">Programmer</td>
+							</tr>
+							<tr>
+								<td class="n">2</td>
+								<td class="k">Diaz, Anastasha</td>
+								<td class="k">Hired</td>
+								<td class="k">Programmer</td>
+							</tr>
+							<tr>
+								<td class="n">3</td>
+								<td class="k">Polvoriza</td>
+								<td class="k">Hired</td>
+								<td class="k">Programmer</td>
+							</tr>
+							<tr>
+								<td class="n">4</td>
+								<td class="k">Santos, Chris</td>
+								<td class="k">Hired</td>
+								<td class="k">Programmer</td>
+							</tr>
+						</table>
+						<br/>
+						<br/>
+						</div>
+					</div>
+				</div>
+				
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

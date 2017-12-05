@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+
+			
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+		
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+			
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the Log-In Page of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li><b>FORGOT PASSWORD link</b> - If you click this link, it will direct you to a page that will help you get a new password.
+											<li><b>LOG IN button </b> - If you type correctly your username and password & click this, it will direct you to your respective account
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d" style="width: 35%;">
+				
+					
+				<form action="processlogin.html" method="post" onsubmit="return validateLogin()">
+					<div class="row">
+					<input type="text" class="notice" id="notice" style="width:100%; color: black; background-color: white; border:0px; text-align:center; " value="" disabled>
+					<br/>
+						<table width="100%">
+							<tr>
+								<td width="20%" class="e"><h6>Username</h6></td>
+								<td><input type="text" style="margin-top:-10px;" id="un" name="Username"></td>
+							</tr>
+							<tr>
+								<td width="20%" class="e"><h6>Password</h6></td>
+								<td><input type="password" style="margin-top:-10px;" id="pw" name="Password"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="row">
+						<br/>
+							<div class="col-lg-4"></div>
+							<div class="col-lg-8">
+							
+							<p align="right"><a href="forgotpw.html" style="font-size:20px; color:#007cb1;">Forgot Password</a>
+							<input type="submit" value="LOG IN" style="margin-left:10px"></p>
+							</div>					
+					</div>
+				</form>
+			
+			<br/>
+			<br/>
+			<br/>
+			
+			</div>
+
+		</div>
+	</body>
+</html>

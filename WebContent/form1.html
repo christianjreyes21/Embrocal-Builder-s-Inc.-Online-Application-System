@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Embrocal Builders</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="js/main.bootbox.js" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="vendor/formvalidation/dist/css/formValidation.min.css">
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/formValidation.min.js"></script>
+		<script src="vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+
+		<style>
+			@font-face{
+				font-family: Bebas Neue Regular;
+				src: url("fonts/BebasNeue.otf") format("opentype");
+			}
+		</style>
+			
+			
+	</head>
+  
+	<body>
+		<div class="main">
+		
+			<div class="container-fluid a">
+				<img src="images/logo.png" width="250px">
+			</div>
+			
+			<div class="container-fluid b">
+				<div class="container" style="width:90%">
+					<table width="100%" style="margin-bottom:-5px;">
+						<tr>
+							<td><div class="g"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Personal info</div></td>
+							<td></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-education.png" width="25px" style="margin-top:-5px"> &nbsp;Educational Background</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-suitcase.png" width="20px" style="margin-top:-5px"> &nbsp;Employment Record</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-group.png" width="25px" style="margin-top:-5px"> &nbsp;Character References</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-paperclip.png" width="20px" style="margin-top:-5px"> &nbsp;Others</div></td>
+							<td><div class="h"><img src="glyphicons/glyphicons-lock.png" width="15px" style="margin-top:-5px"> &nbsp;Username & Password</div></td>
+						
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div class="container c" style="width: 88%;">
+				<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+			
+				
+				<div class="modal fade" id="myModal" role="dialog">
+					
+					<div class="modal-dialog">
+
+					  <!-- Modal content-->
+						<div class="modal-content">
+					  
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+									<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+									<br/>
+									<font class="t">Here are some instructions to follow in using the system:</font></center>
+								</div>
+								
+								<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+									<font class="v">Welcome to the On-line Resume of Embrocal Builders Inc. On-line Application System!
+										<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+										<br/>
+										<ul>
+											<li><b>UPLOAD IMAGE field</b> - It will let you choose an image file from your computer by clicking the BROWSE button. You will see this attached image together with your complete resume at the last part of the process.
+											<li><b>DATE OF BIRTH field</b> - It will let you choose your birthday by using a calendar that will pop-up when you click the field itself.
+											<li>You can just type <b>NONE</b> if the field to be answered is really not applicable to you like for example, the <b>NAME OF SPOUSE, HIS/HER OCCUPATION</b> fields etc.
+											<li><b>NEXT button</b> - If you click this, it will direct you to the next part of the On-line Resume which is the Educational Background.
+										</ul>
+									<br/>
+									<p align="right">Thank you!</p></font>
+
+								</div>
+								
+								<div class="modal-footer">
+								  
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container d">
+			
+							
+				<div class="row">
+					<div class="col-lg-11">
+						<form id="form2" action="apply.html" method="post" class="form-horizontal">
+							<input type="hidden" name="form" value="1"/>
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Upload image</label>
+								<div class="col-lg-6">
+									<input id="uploadFile" class="file" disabled="disabled"/>
+								</div>
+								<div class="col-lg-1">
+									<div style="background-color: #026995; border:0px;" class="fileUpload btn btn-primary">
+										<span>BROWSE</span>
+										<input id="uploadBtn" type="file" class="upload" />
+									</div>
+								</div>
+							</div>
+							
+							<br/><br/><br/>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Name</label>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" placeholder="Last name" name="LastName"/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" placeholder="First name" name="FirstName"/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" class="form-control" placeholder="Middle name" name="MiddleName"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Permanent Address</label>
+								<div class="col-lg-2">
+									<input type="text" name="CityAddress1" placeholder="House no."/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" name="CityAddress2" placeholder="Street/Barangay"/>
+								</div>
+								<div class="col-lg-4">
+									<input type="text" name="CityAddress3" placeholder="Municipality/City, Province"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Secondary Address</label>
+								<div class="col-lg-2">
+									<input type="text" name="ProvincialAddress1" placeholder="House no."/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" name="ProvincialAddress2" placeholder="Street/Barangay"/>
+								</div>
+								<div class="col-lg-4">
+									<input type="text" name="ProvincialAddress3" placeholder="Municipality/City, Province"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Contact No.</label>
+								<div class="col-lg-4">
+									<input type="text" name="ContactNumber"/>
+								</div>
+								<label class="col-lg-2 e" style="font-weight:normal;">Country code</label>
+								<div class="col-lg-3">
+									<input type="text"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Date of Birth</label>
+								<div class="col-lg-4">
+									<input  type="date" placeholder="mm/dd/yyyy"  id="example1" name="DateOfBirth">
+								</div>
+								<label class="col-lg-2 e" style="font-weight:normal;">Place of birth</label>
+								<div class="col-lg-3">
+									<input type="text" name="PlaceOfBirth"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Civil Status</label>
+								<div class="col-lg-4">
+									<select name="CivilStatus">
+											<option selected=""></option>
+											<option value="Single">Single</option>
+											<option value="Married">Married</option>
+											<option value="Divorced">Divorced</option>
+											<option value="Widowed">Widowed</option>
+									</select>
+								</div>
+								<label class="col-lg-2 e" style="font-weight:normal;">Citizenship</label>
+								<div class="col-lg-3">
+									<input type="text" name="Citizenship"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Height</label>
+								<div class="col-lg-3">
+									<input type="number" name="Height1" placeholder="feet" style="width:40%"/>
+										&nbsp; &nbsp;
+									<input type="number" name="Height2" placeholder="inches" style="width:40%"/>
+								</div>
+								
+								<label class="col-lg-3 e" style="font-weight:normal;">Weight</label>
+								<div class="col-lg-3">
+									<input type="number" name="Weight" style="width:90%"/> kg
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Religion</label>
+								<div class="col-lg-4">
+									<input type="text" name="Religion"/>
+								</div>
+								
+								<label class="col-lg-2 e" style="font-weight:normal;">Sex</label>
+								<div class="col-lg-3">
+									<select name="Sex">
+										<option selected=""></option>
+										<option value="Female">Female</option>
+										<option value="Male">Male</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Languages/Dialects</label>
+								<div class="col-lg-9">
+									<input type="text" name="Language"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Name of Spouse</label>
+								<div class="col-lg-9">
+									<input type="text" name="Spouse"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">His/her occupation</label>
+								<div class="col-lg-9">
+									<input type="text" name="SpouseOccupation"/>
+									
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Their Address</label>
+								<div class="col-lg-2">
+									<input type="text" name="Address1" placeholder="House no."/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" name="Address2" placeholder="Street/Barangay"/>
+								</div>
+								<div class="col-lg-4">
+									<input type="text" name="Address3" placeholder="Municipality/City, Province"/>
+								</div>
+							</div>
+							
+							<br/><br/><br/>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Father's Name</label>
+								<div class="col-lg-4">
+									<input type="text" name="FatherName"/>
+								</div>
+								<label class="col-lg-2 e" style="font-weight:normal;">Occupation</label>
+								<div class="col-lg-3">
+									<input type="text" name="FatherOccupation"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Mother's Name</label>
+								<div class="col-lg-4">
+									<input type="text" name="MotherName"/>
+								</div>
+								<label class="col-lg-2 e" style="font-weight:normal;">Occupation</label>
+								<div class="col-lg-3">
+									<input type="text" name="MotherOccupation"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Their Address</label>
+								<div class="col-lg-2">
+									<input type="text" name="ParentAddress1" placeholder="House no."/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" name="ParentAddress2" placeholder="Street/Barangay"/>
+								</div>
+								<div class="col-lg-4">
+									<input type="text" name="ParentAddress3" placeholder="Municipality/City, Province"/>
+								</div>
+							</div>
+							
+							<br/><br/><br/>
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;"></label>
+								<div class="col-lg-9">
+									<font class="f">In case of emergency</font>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Person to notify</label>
+								<div class="col-lg-9">
+									<input type="text" name="EmgPerson"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Relation</label>
+								<div class="col-lg-9">
+									<input type="text" name="EmgRelation"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">His/her Address</label>
+								<div class="col-lg-2">
+									<input type="text" name="EmgAddress1" placeholder="House no."/>
+								</div>
+								<div class="col-lg-3">
+									<input type="text" name="EmgAddress2" placeholder="Street/Barangay"/>
+								</div>
+								<div class="col-lg-4">
+									<input type="text" name="EmgAddress3" placeholder="Municipality/City, Province"/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-3 e" style="font-weight:normal;">Contact No.</label>
+								<div class="col-lg-9">
+									<input type="text" name="EmgContactNumber"/>
+								</div>
+							</div>
+							
+							<br/><br/>
+							 <div class="col-lg-12 col-lg-offset-10">
+								<a href="index.html"><button type="button" class="btn btn-primary">CANCEL</button></a> &nbsp; <button type="submit" class="btn btn-primary" name="next" value="next">NEXT</button>
+							</div>
+
+						</form>
+								
+						<br/>
+						<br/>
+						<br/>
+						
+						<br/>
+						<br/>
+						<br/>
+					</div>
+					<div class="col-lg-2"></div>
+				
+					<script>
+					$(document).ready(function() {
+						$('#form2').formValidation({
+							framework: 'bootstrap',
+							fields: {
+								LastName: {
+									validators: {
+										notEmpty: {
+											message: 'Last name is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The last name can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								FirstName: {
+									validators: {
+										notEmpty: {
+											message: 'First name is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The first name can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								MiddleName: {
+									validators: {
+										notEmpty: {
+											message: 'Middle name is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The middle name can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								CityAddress1: {
+									validators: {
+										notEmpty: {
+											message: 'House no. is required'
+										}
+									}
+								},
+								CityAddress2: {
+									validators: {
+										notEmpty: {
+											message: 'Street/Barangay is required'
+										}
+									}
+								},
+								CityAddress3: {
+									validators: {
+										notEmpty: {
+											message: 'Municipality/City, Province is required'
+										}
+									}
+								},
+								ProvincialAddress1: {
+									validators: {
+										notEmpty: {
+											message: 'House no. is required'
+										}
+									}
+								},
+								ProvincialAddress2: {
+									validators: {
+										notEmpty: {
+											message: 'Street/Barangay is required'
+										}
+									}
+								},
+								ProvincialAddress3: {
+									validators: {
+										notEmpty: {
+											message: 'Municipality/City, Province is required'
+										}
+									}
+								},
+								ContactNumber: {
+									validators: {
+										notEmpty: {
+											message: 'Contact no. is required'
+										},
+										regexp: {
+											regexp: /^\d{4}-\d{3}-\d{4}$/i,
+											message: 'Invalid contact number. Format: 09XX-XXX-XXXX'
+										}
+									}
+								},
+								DateOfBirth: {
+									validators: {
+										notEmpty: {
+											message: 'Date of birth is required'
+										}
+									}
+								},
+								PlaceOfBirth: {
+									validators: {
+										notEmpty: {
+											message: 'Place of birth is required'
+										}
+									}
+								},
+								CivilStatus: {
+									validators: {
+										notEmpty: {
+											message: 'Civil status is required'
+										}
+									}
+								},
+								Citizenship: {
+									validators: {
+										notEmpty: {
+											message: 'Citizenship is required'
+										}
+									}
+								},
+								Height1: {
+									validators: {
+										notEmpty: {
+											message: 'Height is required'
+										},
+										integer: {
+											message: 'Invalid height'
+										}
+									}
+								},
+								Height2: {
+									validators: {
+										integer: {
+											message: 'Invalid height'
+										}
+									}
+								},
+								Weight: {
+									validators: {
+										notEmpty: {
+											message: 'Weight is required'
+										},
+										integer: {
+											message: 'Invalid height'
+										}
+									}
+								},
+								Religion: {
+									validators: {
+										notEmpty: {
+											message: 'Religion is required'
+										}
+									}
+								},
+								Sex: {
+									validators: {
+										notEmpty: {
+											message: 'Sex is required'
+										}
+									}
+								},
+								Language: {
+									validators: {
+										notEmpty: {
+											message: 'Language/Dialects is required'
+										}
+									}
+								},
+								Spouse: {
+									validators: {
+										notEmpty: {
+											message: 'Sex is required'
+										}
+									}
+								},
+								SpouseOccupation: {
+									validators: {
+										notEmpty: {
+											message: 'Spouse Occupation is required'
+										}
+									}
+								},
+								Address1: {
+									validators: {
+										notEmpty: {
+											message: 'House no. is required'
+										}
+									}
+								},
+								Address2: {
+									validators: {
+										notEmpty: {
+											message: 'Street/Barangay is required'
+										}
+									}
+								},
+								Address3: {
+									validators: {
+										notEmpty: {
+											message: 'Municipality/City, Province is required'
+										}
+									}
+								},
+								FatherName: {
+									validators: {
+										notEmpty: {
+											message: 'Father\'s name is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The father\'s name can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								FatherOccupation: {
+									validators: {
+										notEmpty: {
+											message: 'Father\'s occupation is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The father\'s occupation can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								MotherName: {
+									validators: {
+										notEmpty: {
+											message: 'Father\'s name is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The father\'s name can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								MotherOccupation: {
+									validators: {
+										notEmpty: {
+											message: 'Father\'s occupation is required'
+										},
+										regexp: {
+											regexp: /^[a-z\s]+$/i,
+											message: 'The father\'s occupation can consist of alphabetical characters and spaces only'
+										}
+									}
+								},
+								ParentAddress1: {
+									validators: {
+										notEmpty: {
+											message: 'House no. is required'
+										}
+									}
+								},
+								ParentAddress2: {
+									validators: {
+										notEmpty: {
+											message: 'Street/Barangay is required'
+										}
+									}
+								},
+								ParentAddress3: {
+									validators: {
+										notEmpty: {
+											message: 'Municipality/City, Province is required'
+										}
+									}
+								},
+								EmgPerson: {
+									validators: {
+										notEmpty: {
+											message: 'This is required'
+										}
+									}
+								},
+								EmgRelation: {
+									validators: {
+										notEmpty: {
+											message: 'This is required'
+										}
+									}
+								},
+								EmgAddress1: {
+									validators: {
+										notEmpty: {
+											message: 'House no. is required'
+										}
+									}
+								},
+								EmgAddress2: {
+									validators: {
+										notEmpty: {
+											message: 'Street/Barangay is required'
+										}
+									}
+								},
+								EmgAddress3: {
+									validators: {
+										notEmpty: {
+											message: 'Municipality/City, Province is required'
+										}
+									}
+								},
+								EmgContactNumber: {
+									validators: {
+										notEmpty: {
+											message: 'Contact no. is required'
+										},
+										regexp: {
+											regexp: /^\d{4}-\d{3}-\d{4}$/i,
+											message: 'Invalid contact number. Format: 09XX-XXX-XXXX'
+										}
+									}
+								}
+							}
+						});
+					});
+					</script>
+
+			
+			</div>
+
+		</div>
+	</body>
+</html>

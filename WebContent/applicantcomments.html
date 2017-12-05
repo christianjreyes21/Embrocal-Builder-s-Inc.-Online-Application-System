@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Embrocal Builders</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		
+			<style>
+				@font-face{
+					font-family: Bebas Neue Regular;
+					src: url("fonts/BebasNeue.otf") format("opentype");
+				}
+			</style>
+			
+			
+			<script>
+				function hideModal(){
+					$("#tyModal").modal("hide");
+				};
+			</script>
+	</head>
+	<body>
+		<div class="main">
+			
+				<div class="container-fluid a">
+					<img src="images/logo.png" width="250px">
+				</div>
+				
+				<div class="container-fluid b">
+					<div class="container" style="width:90%">
+						<table width="100%" style="margin-bottom:-5px;">
+							<tr>
+								<td><a href="profile.html"><div class="h"><img src="glyphicons/glyphicons-user.png" width="20px" style="margin-top:-5px"> &nbsp;Personal info</div></a></td>
+								<td><a href="applicantinterview.html"><div class="h"><img src="glyphicons/glyphicons-calendar.png" width="20px" style="margin-top:-5px"> &nbsp;Interview Schedule</div></a></td>
+								<td><a href="applicantstatus.html"><div class="h"><img src="glyphicons/glyphicons-circle-info.png" width="20px" style="margin-top:-5px"> &nbsp;Status</div></a></td>
+								<td><a href="applicantcomments.html"><div class="g"><img src="glyphicons/glyphicons-comments.png" width="20px" style="margin-top:-5px"> &nbsp; Comments & Suggestions</div></a></td>
+								<td></td>
+								<td width="30%"></td>
+								<td><a href="applicantsettings.html"><div class="h"><img src="glyphicons/glyphicons-cogwheel2.png" width="20px" style="margin-top:-5px">&nbsp;Settings</div></a></td>
+								<td><a href="index.html"><div class="g"><img src="glyphicons/glyphicons-log-out.png" width="20px" style="margin-top:-5px">&nbsp;Log out</div></a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				<div class="container c" style="width: 88%;">
+					<p align="right"><div><a data-toggle="modal" href="#myModal"><h4>Help &nbsp;<img src="images/help.png" width="30px"></h4></a></div></p>
+				
+					<div class="modal fade" id="myModal" role="dialog">
+						
+						<div class="modal-dialog">
+
+						  <!-- Modal content-->
+							<div class="modal-content">
+						  
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+										<center style="padding-top:40px"><font class="u">NEED HELP WITH THE SYSTEM?</font>
+										<br/>
+										<font class="t">Here are some instructions to follow in using the system:</font></center>
+									</div>
+									
+									<div class="modal-body" style="padding:40px; background-color:#f0f0f0;">
+										<font class="v">Welcome to your Personal Account - Comments/Suggestions!
+											<br/><br/>As you can see, there are many fields to be answered and here are some important guidelines on this page to help you:
+											<br/>
+											<ul>
+												<li>On this page, you can see a big text field for your comments and suggestions.
+												<li>These comments and suggestions are for your concerns about the on-line application system being used. You can type here anything you wanted to say about the system of the company.
+												<li><b>SUBMIT button</b> - If you click this, your comments and suggestions will now be sent to the company.
+												<li>Also, you can see here the other tabs to be viewed.
+											</ul>
+										<br/>
+										<p align="right">Thank you!</p></font>
+
+									</div>
+									
+									<div class="modal-footer">
+									  
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="container d" style="width: 60%;">
+				
+					<h3>Please type your comments and suggestions about the online application system:</h3>
+					<form>
+					<textarea></textarea>
+					
+					<br/>
+					<br/>
+					<br/>
+					
+					<p align="right"><a href="" data-toggle="modal" data-target="#tyModal"><input class="button2" type="submit" value="SUBMIT"/></a></p>
+					</form>
+					<div class="modal fade" id="tyModal" role="dialog">
+					
+								<div class="modal-dialog">
+
+								  <!-- Modal content-->
+									<div class="modal-content">
+								  
+											<div class="modal-header" style="padding:30px">
+												<button type="button" class="close" data-dismiss="modal" style="color:green;">&times;</button>
+												<center style="margin-top:40px;"><font class="u" style="line-height:1">THANK YOU FOR SUBMITTING YOUR COMMENTS AND SUGGESTIONS.</font>
+												<br/><br/>
+												<p align="center"><button class="button2" onclick="hideModal()">Back to Home</button></p>
+											</div>
+									</div>
+								</div>
+							</div>
+					
+				<br/>
+				<br/>
+				<br/>
+				
+				</div>
+	</body>
+</html>
